@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.light-theme {
+    --background-color: #f5f5f5;
+    --text-color: #1a1a1a;
+    --box-color: #E0E1EB;
+    --button-color: #fff;
+    --box-invert: #E0E1EB;
+
+    --box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+}
+
+.dark-theme {
+    --background-color: #191923;
+    --text-color: #f5f5f5;
+    --box-color: #2B2D3C;
+    --button-color: #1a1a1a;
+    --box-invert: #2B2D3C;
+}
+
+.toggle {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    color: var(--button-color);
+    transition: all .1s ease;
+}

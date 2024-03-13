@@ -1,0 +1,106 @@
+@import url("../styles.scss");
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+    background-color: var(--background-color);
+    .card {
+        width: 245px;
+        height: 245px;
+        background-color: var(--box-color);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        cursor: pointer;
+        overflow: hidden;
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color:#696E86;
+            transition: color 2s;
+        }
+        transition: background-color 2s;
+        &:nth-child(1):hover {
+            background-color:#696E86;
+            p {
+                color: #EDB526;
+            }
+        }
+
+        &:nth-child(2):hover {
+            background-color:#696E86;
+            p {
+                color: #17258b;
+            }
+        }
+
+        &:nth-child(3):hover {
+            background-color:#696E86;
+            p {
+                color: #F04242;
+            }
+        }
+    }
+
+    .card-invert {
+        width: 245px;
+        height: 245px;
+        background: var(--box-invert);
+        position: absolute;
+        border-radius: 10px;
+        top: 50px;
+        opacity: 0;
+        visibility: hidden;
+        padding:30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 28px;
+        .design {
+            border-radius: 50%;
+            border: 2px solid #edb526;
+            padding: 5px 20px;
+            width: max-content;
+            p {
+                color:#EDB526;
+                font-size: 48px;
+            }
+        }
+        .front {
+            border-radius: 50%;
+            border: 2px solid #273EED;
+            padding: 5px 20px;
+            width: max-content;
+            p {
+                color:#273EED;
+                font-size: 48px;
+            }
+        }
+        .back {
+            border-radius: 50%;
+            border: 2px solid #F04242;
+            padding: 5px 20px;
+            width: max-content;
+            p {
+                color:#F04242;
+                font-size: 48px;
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #696E86;
+            font-weight: 200;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
